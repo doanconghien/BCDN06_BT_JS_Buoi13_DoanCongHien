@@ -1,19 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Bootrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <!-- Bài 1:  -->
 
+<body>
+    <!-- Bài 1: Tính tiền lương nhân viên-->
+    <div class="container py-5">
+        <div class="w-50">
+            <h3>Bài 1: Tính tiền lương nhân viên</h3>
+            <form class="tienLuong__content">
+                <div class="form-group">
+                    <input type="number" class="form-control" id="inputLuongMotNgay" placeholder="Nhập lương một ngày">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="inputSoNgayLam" placeholder="Số ngày làm">
+                </div>
+                <button type="button" class="btn btn-danger" id="btnCalc">Tính tiền</button>
+                <p id="tongTien"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bài 2: Tính trung bình -->
+    <div class="container py-5">
+        <div class="w-50">
+            <h3>Bài 2: Tính số trung bình</h3>
+            <form class="soTrungBinh__content">
+                <div class="form-group">
+                    <input type="number" class="form-control" id="number1" placeholder="Nhập số thứ 1">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="number2" placeholder="Nhập số thứ 2">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="number3" placeholder="Nhập số thứ 3">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="number4" placeholder="Nhập số thứ 4">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="number5" placeholder="Nhập số thứ 5">
+                </div>
+                <button type="button" class="btn btn-dark" id="btnCalc">Tính số trung bình</button>
+                <p id="result"></p>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
 
     <!-- Main JS -->
     <script src="./js/main.js"></script>
 </body>
+
 </html>
